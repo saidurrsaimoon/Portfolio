@@ -87,13 +87,13 @@ nav a:hover {
 .menu-btn {
   display: none;
   border: 0;
-  background: none;
+  background: red;
   font-size: 1.6rem;
   cursor: pointer;
 }
 
 .section {
-  width: min(1120px, 88%);
+  width: min(1120px, 95%);
   margin: auto;
   padding: 115px 0;
 }
