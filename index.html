@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MD. Saidur Rohoman Saimoon | Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Syne:wght@600;700;800&family=JetBrains+Mono:wght@400;600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Preloader -->
+<div id="preloader">
+  <div class="pl-ring">
+    <svg viewBox="0 0 120 120">
+      <circle class="pl-bg" cx="60" cy="60" r="52"/>
+      <circle class="pl-fg" cx="60" cy="60" r="52"/>
+    </svg>
+    <div class="pl-counter"><span id="plNum">0</span><i>%</i></div>
+  </div>
+  <div class="pl-logo">SAIMOON<span>.</span></div>
+  <div class="pl-text">Loading Experience</div>
+</div>
+
+<!-- Background -->
+<div class="bg-base"></div>
+<div class="bg-grid"></div>
+<div class="bg-noise"></div>
+<div class="orb orb1"></div>
+<div class="orb orb2"></div>
+<div class="orb orb3"></div>
+<div class="orb orb4"></div>
+<div class="orb orb5"></div>
+<canvas id="particles"></canvas>
+
+<div id="scrollProgress"></div>
+
+<!-- Cursor -->
+<div class="cursor-trail" id="trail1"></div>
+<div class="cursor-trail" id="trail2"></div>
+<div class="cursor-trail" id="trail3"></div>
+<div class="cursor-trail" id="trail4"></div>
+<div class="cursor-trail" id="trail5"></div>
+<div class="cursor-ring"></div>
+<div class="cursor-dot"></div>
+
+<!-- Navbar -->
+<nav id="navbar">
+  <a href="#home" class="logo">
+    <span class="logo-mark">S</span>
+    <span class="logo-text">aimoon<em>.</em></span>
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#home" data-text="Home"><span>Home</span></a></li>
+    <li><a href="#about" data-text="About"><span>About</span></a></li>
+    <li><a href="#services" data-text="Services"><span>Services</span></a></li>
+    <li><a href="#skills" data-text="Skills"><span>Skills</span></a></li>
+    <li><a href="#projects" data-text="Projects"><span>Projects</span></a></li>
+    <li><a href="#contact" data-text="Contact"><span>Contact</span></a></li>
+  </ul>
+  <div class="nav-right">
+    <button id="themeBtn" aria-label="Toggle theme">
+      <i class="fas fa-sun"></i>
+      <i class="fas fa-moon"></i>
+    </button>
+    <button class="menu-btn" id="menuBtn" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section id="home" class="hero">
+  <div class="hero-floating-code">
+    <span>&lt;design /&gt;</span>
+    <span>{ creativity }</span>
+    <span>[ innovation ]</span>
+  </div>
+  <div class="hero-inner">
+    <div class="hero-badge">
+      <span class="badge-pulse"></span>
+      <span>Available for Opportunities</span>
+    </div>
+    <h1 class="hero-name">
+      <span class="line"><span class="word" data-letters="MD. Saidur"></span></span>
+      <span class="line"><span class="word gradient" data-letters="Rohoman Saimoon"></span></span>
+    </h1>
+    <div class="hero-role">
+      <span class="role-bracket">[</span>
+      <span id="typingRole"></span>
+      <span class="role-cursor"></span>
+      <span class="role-bracket">]</span>
+    </div>
+    <p class="hero-desc">
+      Soil Science student at <strong>Barishal Govt College</strong> crafting 
+      beautiful digital experiences through code &amp; creativity.
+    </p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn btn-glow" data-magnetic>
+        <span><i class="fas fa-paper-plane"></i> Let's Talk</span>
+      </a>
+      <a href="cv.html" class="btn btn-ghost" data-magnetic>
+        <span><i class="fas fa-file-alt"></i> View CV</span>
+      </a>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <div class="scroll-line"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- Marquee -->
+<div class="marquee">
+  <div class="marquee-inner">
+    <span class="marquee-item">✦ Web Design</span>
+    <span class="marquee-item">✦ Web Development</span>
+    <span class="marquee-item">✦ Problem Solver</span>
+    <span class="marquee-item">✦ Soil Science</span>
+    <span class="marquee-item">✦ Creative Thinker</span>
+    <span class="marquee-item">✦ Team Player</span>
+    <span class="marquee-item">✦ Web Design</span>
+    <span class="marquee-item">✦ Web Development</span>
+    <span class="marquee-item">✦ Problem Solver</span>
+    <span class="marquee-item">✦ Soil Science</span>
+    <span class="marquee-item">✦ Creative Thinker</span>
+    <span class="marquee-item">✦ Team Player</span>
+  </div>
+</div>
+
+<!-- About -->
+<section id="about" class="section">
+  <div class="section-head reveal">
+    <span class="section-tag">// 01 — About</span>
+    <h2 class="section-title scramble" data-text="Who Am I?">Who Am I?</h2>
+  </div>
+  <div class="about-wrap">
+    <div class="about-visual reveal">
+      <div class="blob-wrap">
+        <div class="blob-glow"></div>
+        <svg class="blob-svg" viewBox="0 0 500 500">
+          <defs>
+            <clipPath id="blobClip">
+              <path id="blobPath" d="M421,309Q399,368,346,398Q293,428,235,418Q177,408,124,373Q71,338,62,278Q53,218,90,167Q127,116,182,90Q237,64,294,81Q351,98,390,144Q429,190,435,239Q441,288,421,309Z"/>
+            </clipPath>
+          </defs>
+          <image href="profile.jpg" x="0" y="0" width="500" height="500" preserveAspectRatio="xMidYMid slice" clip-path="url(#blobClip)"/>
+        </svg>
+        <div class="blob-ring"></div>
+        <div class="blob-orbit"><span class="orbit-ball"></span></div>
+      </div>
+      <div class="visual-tag">
+        <i class="fas fa-code"></i>
+        <span>Web Developer</span>
+      </div>
+    </div>
+    <div class="about-text reveal">
+      <div class="about-line"><span>Hello!</span></div>
+      <h3 class="about-h">I'm <span class="grad-text">Saidur</span>, building things for the web.</h3>
+      <p>
+        A motivated and responsible undergraduate student, currently studying 
+        <strong>Soil Science</strong> at <strong>Barishal Government College (2025–2026)</strong>. 
+        I love learning, collaborating and contributing with passion.
+      </p>
+      <p>
+        Beyond academics, I'm deeply passionate about <strong>web design, programming and technology</strong>. 
+        I turn creative ideas into beautiful, functional websites.
+      </p>
+      <div class="about-info">
+        <div class="info-row">
+          <i class="fas fa-university"></i>
+          <div><small>College</small><strong>Barishal Govt College</strong></div>
+        </div>
+        <div class="info-row">
+          <i class="fas fa-flask"></i>
+          <div><small>Department</small><strong>Soil Science</strong></div>
+        </div>
+        <div class="info-row">
+          <i class="fas fa-map-marker-alt"></i>
+          <div><small>Location</small><strong>Barishal, Bangladesh</strong></div>
+        </div>
+        <div class="info-row">
+          <i class="fas fa-envelope"></i>
+          <div><small>Email</small><strong style="font-size:.78rem">saidur.r.saimoon@gmail.com</strong></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Services -->
+<section id="services" class="section">
+  <div class="section-head reveal">
+    <span class="section-tag">// 02 — Services</span>
+    <h2 class="section-title scramble" data-text="What I Do">What I Do</h2>
+  </div>
+  <div class="services-grid">
+    <div class="service-card reveal" data-tilt>
+      <div class="service-inner">
+        <div class="service-icon"><i class="fas fa-pen-nib"></i></div>
+        <h4>Web Designing</h4>
+        <p>Creating stunning, modern and fully responsive layouts that engage and convert.</p>
+        <span class="service-num">01</span>
+      </div>
+      <div class="spotlight"></div>
+    </div>
+    <div class="service-card reveal" data-tilt>
+      <div class="service-inner">
+        <div class="service-icon"><i class="fas fa-terminal"></i></div>
+        <h4>Web Development</h4>
+        <p>Building fast, dynamic and functional websites with HTML, CSS and JavaScript.</p>
+        <span class="service-num">02</span>
+      </div>
+      <div class="spotlight"></div>
+    </div>
+    <div class="service-card reveal" data-tilt>
+      <div class="service-inner">
+        <div class="service-icon"><i class="fas fa-chart-simple"></i></div>
+        <h4>Microsoft Office</h4>
+        <p>Professional documentation, data handling and presentations using Word, Excel, PowerPoint.</p>
+        <span class="service-num">03</span>
+      </div>
+      <div class="spotlight"></div>
+    </div>
+    <div class="service-card reveal" data-tilt>
+      <div class="service-inner">
+        <div class="service-icon"><i class="fas fa-brain"></i></div>
+        <h4>Problem Solving</h4>
+        <p>Analytical thinking and creative solutions to tackle technical and logical challenges.</p>
+        <span class="service-num">04</span>
+      </div>
+      <div class="spotlight"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Stats -->
+<section class="stats-section">
+  <div class="stats-grid">
+    <div class="stat-card reveal">
+      <div class="stat-num" data-count="100">0</div>
+      <div class="stat-suffix">%</div>
+      <div class="stat-label">Dedication</div>
+    </div>
+    <div class="stat-card reveal">
+      <div class="stat-num" data-count="6">0</div>
+      <div class="stat-suffix">+</div>
+      <div class="stat-label">Skills</div>
+    </div>
+    <div class="stat-card reveal">
+      <div class="stat-num" data-count="2">0</div>
+      <div class="stat-suffix"></div>
+      <div class="stat-label">Languages</div>
+    </div>
+    <div class="stat-card reveal">
+      <div class="stat-num" data-count="2025">0</div>
+      <div class="stat-suffix"></div>
+      <div class="stat-label">Since</div>
+    </div>
+  </div>
+</section>
+
+<!-- Journey -->
+<section id="skills" class="section">
+  <div class="section-head reveal">
+    <span class="section-tag">// 03 — Education & Skills</span>
+    <h2 class="section-title scramble" data-text="My Journey">My Journey</h2>
+  </div>
+  <div class="journey-wrap">
+    <div class="timeline-col">
+      <div class="tl-item reveal">
+        <div class="tl-marker"><span></span><div class="tl-ping"></div></div>
+        <div class="tl-body">
+          <span class="tl-date">2025 — 2026</span>
+          <h4>B.Sc. Honours — Soil Science</h4>
+          <p>Barishal Government College · Currently pursuing my Bachelor's degree with passion for science and learning.</p>
+        </div>
+      </div>
+      <div class="tl-item reveal">
+        <div class="tl-marker"><span></span><div class="tl-ping"></div></div>
+        <div class="tl-body">
+          <span class="tl-date">2025</span>
+          <h4>HSC — Science</h4>
+          <p>Charfesson Government College · GPA 3.08. Where my curiosity for technology truly began.</p>
+        </div>
+      </div>
+    </div>
+    <div class="skills-col">
+      <div class="skill reveal">
+        <div class="skill-top">
+          <span><i class="fas fa-pen-nib"></i> Website Designing</span>
+          <em><span class="skill-count" data-count="88">0</span>%</em>
+        </div>
+        <div class="skill-track"><div class="skill-fill" data-width="88"></div></div>
+      </div>
+      <div class="skill reveal">
+        <div class="skill-top">
+          <span><i class="fas fa-terminal"></i> Web Development</span>
+          <em><span class="skill-count" data-count="82">0</span>%</em>
+        </div>
+        <div class="skill-track"><div class="skill-fill" data-width="82"></div></div>
+      </div>
+      <div class="skill reveal">
+        <div class="skill-top">
+          <span><i class="fas fa-chart-simple"></i> Microsoft Office</span>
+          <em><span class="skill-count" data-count="85">0</span>%</em>
+        </div>
+        <div class="skill-track"><div class="skill-fill" data-width="85"></div></div>
+      </div>
+      <div class="skill reveal">
+        <div class="skill-top">
+          <span><i class="fas fa-brain"></i> Problem Solving</span>
+          <em><span class="skill-count" data-count="85">0</span>%</em>
+        </div>
+        <div class="skill-track"><div class="skill-fill" data-width="85"></div></div>
+      </div>
+      <div class="skill reveal">
+        <div class="skill-top">
+          <span><i class="fas fa-comments"></i> Communication</span>
+          <em><span class="skill-count" data-count="80">0</span>%</em>
+        </div>
+        <div class="skill-track"><div class="skill-fill" data-width="80"></div></div>
+      </div>
+      <div class="skill reveal">
+        <div class="skill-top">
+          <span><i class="fas fa-clock"></i> Time Management</span>
+          <em><span class="skill-count" data-count="83">0</span>%</em>
+        </div>
+        <div class="skill-track"><div class="skill-fill" data-width="83"></div></div>
+      </div>
+      <div class="lang-row">
+        <div class="lang-pill"><div class="lang-name">বাংলা</div><div class="lang-lvl">Native</div></div>
+        <div class="lang-pill"><div class="lang-name">English</div><div class="lang-lvl">Intermediate</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="section">
+  <div class="section-head reveal">
+    <span class="section-tag">// 04 — Projects</span>
+    <h2 class="section-title scramble" data-text="Selected Work">Selected Work</h2>
+  </div>
+  <div class="projects-grid">
+    <a class="project-card reveal" href="#">
+      <div class="project-visual">
+        <div class="pv-bg pv-1"></div>
+        <div class="pv-icon"><i class="fas fa-laptop-code"></i></div>
+        <div class="pv-reveal"></div>
+      </div>
+      <div class="project-meta">
+        <div class="pm-top">
+          <span class="pm-cat">Portfolio</span>
+          <span class="pm-arrow"><i class="fas fa-arrow-up-right-from-square"></i></span>
+        </div>
+        <h4>Personal Portfolio</h4>
+        <p>A modern, animated portfolio built from scratch with HTML, CSS &amp; JavaScript.</p>
+        <div class="pm-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+      </div>
+    </a>
+    <a class="project-card reveal" href="#">
+      <div class="project-visual">
+        <div class="pv-bg pv-2"></div>
+        <div class="pv-icon"><i class="fas fa-wand-magic-sparkles"></i></div>
+        <div class="pv-reveal"></div>
+      </div>
+      <div class="project-meta">
+        <div class="pm-top">
+          <span class="pm-cat">Coming Soon</span>
+          <span class="pm-arrow"><i class="fas fa-arrow-up-right-from-square"></i></span>
+        </div>
+        <h4>Next Project</h4>
+        <p>More exciting work will be added as I continue my journey in web development.</p>
+        <div class="pm-tags"><span>Future</span></div>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- Hobbies -->
+<section id="hobbies" class="section">
+  <div class="section-head reveal">
+    <span class="section-tag">// 05 — Hobbies</span>
+    <h2 class="section-title scramble" data-text="Beyond Work">Beyond Work</h2>
+  </div>
+  <div class="hobbies-grid">
+    <div class="flip-card reveal">
+      <div class="flip-inner">
+        <div class="flip-front"><div class="flip-icon">🏊‍♂️</div><h4>Swimming</h4><span>Hover / Tap</span></div>
+        <div class="flip-back"><h4>Swimming</h4><p>Refreshing and relaxing — my way to refresh both body and mind.</p></div>
+      </div>
+    </div>
+    <div class="flip-card reveal">
+      <div class="flip-inner">
+        <div class="flip-front"><div class="flip-icon">💻</div><h4>Coding</h4><span>Hover / Tap</span></div>
+        <div class="flip-back"><h4>Coding</h4><p>Building cool stuff and turning ideas into working reality.</p></div>
+      </div>
+    </div>
+    <div class="flip-card reveal">
+      <div class="flip-inner">
+        <div class="flip-front"><div class="flip-icon">🎮</div><h4>Video Games</h4><span>Hover / Tap</span></div>
+        <div class="flip-back"><h4>Video Games</h4><p>Strategy games that challenge my thinking and reflexes.</p></div>
+      </div>
+    </div>
+    <div class="flip-card reveal">
+      <div class="flip-inner">
+        <div class="flip-front"><div class="flip-icon">🚗</div><h4>Long Drive</h4><span>Hover / Tap</span></div>
+        <div class="flip-back"><h4>Long Drive</h4><p>Peace on the road — nothing beats the open highway.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="section">
+  <div class="section-head reveal">
+    <span class="section-tag">// 06 — Contact</span>
+    <h2 class="section-title scramble" data-text="Let's Talk">Let's Talk</h2>
+  </div>
+  <div class="contact-wrap">
+    <p class="contact-lead reveal">
+      Have a project, a question, or just want to say hi? Drop a message — it lands right on my WhatsApp.
+    </p>
+    <form class="contact-form reveal" id="contactForm">
+      <div class="input-wrap">
+        <textarea name="message" rows="5" placeholder="Write your message..." required></textarea>
+      </div>
+      <button type="submit" class="btn btn-glow" data-magnetic>
+        <span><i class="fab fa-whatsapp"></i> Send on WhatsApp</span>
+      </button>
+      <p class="form-status" id="formStatus"></p>
+    </form>
+    <div class="social-orbit reveal">
+      <a href="https://www.facebook.com/Saidur.R.Saimoon" target="_blank" rel="noopener" class="orbit-link">
+        <i class="fab fa-facebook-f"></i><span>Facebook</span>
+      </a>
+      <a href="https://m.me/Saidur.R.Saimoon" target="_blank" rel="noopener" class="orbit-link">
+        <i class="fab fa-facebook-messenger"></i><span>Messenger</span>
+      </a>
+      <a href="https://wa.me/8801610426493" target="_blank" rel="noopener" class="orbit-link">
+        <i class="fab fa-whatsapp"></i><span>WhatsApp</span>
+      </a>
+      <a href="https://instagram.com/s.r.saimoon" target="_blank" rel="noopener" class="orbit-link">
+        <i class="fab fa-instagram"></i><span>Instagram</span>
+      </a>
+      <a href="mailto:saidur.r.saimoon@gmail.com" class="orbit-link">
+        <i class="fas fa-envelope"></i><span>Email</span>
+      </a>
+      <a href="tel:+8801610426493" class="orbit-link">
+        <i class="fas fa-phone"></i><span>Call</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-marquee">
+    <span>Let's Create Something Amazing</span>
+    <span class="dot">•</span>
+    <span>Let's Create Something Amazing</span>
+    <span class="dot">•</span>
+    <span>Let's Create Something Amazing</span>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-logo">SRS<em>.</em></div>
+    <p>© 2026 <strong>MD. Saidur Rohoman Saimoon</strong> · Crafted with <span class="heart">♥</span> in Barishal</p>
+  </div>
+</footer>
+
+<button id="topBtn" aria-label="Back to top">
+  <svg viewBox="0 0 48 48">
+    <circle class="ring-bg" cx="24" cy="24" r="21"/>
+    <circle class="ring-fg" cx="24" cy="24" r="21"/>
+  </svg>
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+<script src="script.js"></script>
+</body>
+  </html>
