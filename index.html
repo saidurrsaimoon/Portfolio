@@ -17,6 +17,7 @@
 
 <div class="bg-layer bg-1"></div>
 <div class="bg-layer bg-2"></div>
+<div class="bg-layer bg-3"></div>
 <div class="sparkles" id="sparkles"></div>
 
 <div id="bar"></div>
@@ -72,12 +73,10 @@
   </div>
 </div>
 
-<!-- ABOUT -->
 <section id="about" class="about">
   <div class="about-deco">01</div>
   <div class="container">
     <div class="about-head reveal">
-      <span class="mini">Chapter One</span>
       <h2 class="serif">Who Am I?</h2>
     </div>
     <div class="about-body">
@@ -86,14 +85,20 @@
           <img src="profile.jpg" alt="Saidur">
           <div class="photo-dots"></div>
         </div>
-        <div class="photo-badge"><i class="fas fa-code"></i> Web Developer</div>
+        <div class="photo-badge">
+          <i class="fas fa-code"></i>
+          <span id="badgeType"></span><span class="badge-caret"></span>
+        </div>
       </div>
       <div class="about-txt reveal">
         <h3 class="serif">Hello, I'm <span class="grad">Saidur</span>.</h3>
         <p class="typing-line">
           <span id="aboutType"></span><span class="caret2"></span>
         </p>
-        <p>A motivated and responsible undergraduate student, currently pursuing <b>B.Sc. Honours in Soil Science</b> at <b>Government Barishal College (2025–2026)</b>. I completed my HSC in Science from Charfesson Government College in 2025 with GPA 3.08, and my SSC in Science in 2023 with a perfect GPA 5.00.</p>
+        <p class="typing-line second-type">
+          <span id="aboutType2"></span><span class="caret2"></span>
+        </p>
+        <p>A motivated and responsible undergraduate student, currently pursuing <b>B.Sc. Honours in Soil Science</b> at <b>Government Barishal College (2025–2026)</b>. I completed my HSC in Science from Charfesson Government College in 2025 with GPA 4.08, and my SSC in Science in 2023 with a perfect GPA 5.00.</p>
         <p>Beyond academics, I'm deeply passionate about <b>web design, programming and problem solving</b>. What started as simple curiosity has grown into a genuine love for building things on the web — turning ideas into clean, functional, and beautiful digital experiences.</p>
         <p>I believe in <b>continuous learning</b>. Whether it's mastering a new CSS trick, exploring JavaScript concepts, or understanding how design influences user behavior — I'm always eager to grow. I enjoy working with teams, sharing ideas, and helping others along the way.</p>
         <div class="about-facts">
@@ -114,12 +119,10 @@
   </div>
 </section>
 
-<!-- EDUCATION -->
 <section id="education" class="education">
   <div class="about-deco">02</div>
   <div class="container">
     <div class="edu-head reveal">
-      <span class="mini">Chapter Two</span>
       <h2 class="cormorant">Academic Journey</h2>
     </div>
     <div class="timeline">
@@ -136,7 +139,7 @@
         <div class="time-content">
           <span class="time-date">2025</span>
           <h4 class="cormorant">HSC — Science</h4>
-          <p>Charfesson Government College · GPA 3.08</p>
+          <p>Charfesson Government College · GPA 4.08</p>
         </div>
       </div>
       <div class="time-item reveal">
@@ -151,12 +154,10 @@
   </div>
 </section>
 
-<!-- SKILLS -->
 <section id="skills" class="skills">
   <div class="about-deco">03</div>
   <div class="container">
     <div class="skills-head reveal">
-      <span class="mini">Chapter Three</span>
       <h2 class="space">My Skills</h2>
       <p class="tap-hint"><i class="fas fa-hand-pointer"></i> Tap on any skill to know more</p>
     </div>
@@ -185,34 +186,32 @@
     </div>
 
     <div class="bars reveal">
-      <div class="bar-item"><div class="bar-top"><span><i class="fas fa-pen-nib"></i> Website Designing</span><em><span class="cnt" data-n="88">0</span>%</em></div><div class="bar-track"><div class="bar-fill" data-w="88"></div></div></div>
-      <div class="bar-item"><div class="bar-top"><span><i class="fas fa-terminal"></i> Web Development</span><em><span class="cnt" data-n="82">0</span>%</em></div><div class="bar-track"><div class="bar-fill" data-w="82"></div></div></div>
-      <div class="bar-item"><div class="bar-top"><span><i class="fab fa-html5"></i> HTML / CSS</span><em><span class="cnt" data-n="90">0</span>%</em></div><div class="bar-track"><div class="bar-fill" data-w="90"></div></div></div>
-      <div class="bar-item"><div class="bar-top"><span><i class="fab fa-js"></i> JavaScript</span><em><span class="cnt" data-n="78">0</span>%</em></div><div class="bar-track"><div class="bar-fill" data-w="78"></div></div></div>
-      <div class="bar-item"><div class="bar-top"><span><i class="fas fa-file-word"></i> Microsoft Word</span><em><span class="cnt" data-n="90">0</span>%</em></div><div class="bar-track"><div class="bar-fill" data-w="90"></div></div></div>
-      <div class="bar-item"><div class="bar-top"><span><i class="fas fa-file-excel"></i> Microsoft Excel</span><em><span class="cnt" data-n="85">0</span>%</em></div><div class="bar-track"><div class="bar-fill" data-w="85"></div></div></div>
-      <div class="bar-item"><div class="bar-top"><span><i class="fas fa-file-powerpoint"></i> PowerPoint</span><em><span class="cnt" data-n="88">0</span>%</em></div><div class="bar-track"><div class="bar-fill" data-w="88"></div></div></div>
-      <div class="bar-item"><div class="bar-top"><span><i class="fas fa-keyboard"></i> Typing (30 WPM)</span><em><span class="cnt" data-n="85">0</span>%</em></div><div class="bar-track"><div class="bar-fill" data-w="85"></div></div></div>
-      <div class="bar-item"><div class="bar-top"><span><i class="fas fa-brain"></i> Problem Solving</span><em><span class="cnt" data-n="85">0</span>%</em></div><div class="bar-track"><div class="bar-fill" data-w="85"></div></div></div>
-      <div class="bar-item"><div class="bar-top"><span><i class="fas fa-comments"></i> Communication</span><em><span class="cnt" data-n="80">0</span>%</em></div><div class="bar-track"><div class="bar-fill" data-w="80"></div></div></div>
-      <div class="bar-item"><div class="bar-top"><span><i class="fas fa-users"></i> Teamwork</span><em><span class="cnt" data-n="87">0</span>%</em></div><div class="bar-track"><div class="bar-fill" data-w="87"></div></div></div>
-      <div class="bar-item"><div class="bar-top"><span><i class="fas fa-clock"></i> Time Management</span><em><span class="cnt" data-n="83">0</span>%</em></div><div class="bar-track"><div class="bar-fill" data-w="83"></div></div></div>
+      <div class="bar-item"><div class="bar-top"><span><i class="fas fa-pen-nib"></i> Website Designing</span><em><span class="cnt" data-n="78">0</span>%</em></div><div class="bar-track"><div class="bar-fill" data-w="78"></div></div></div>
+      <div class="bar-item"><div class="bar-top"><span><i class="fas fa-terminal"></i> Web Development</span><em><span class="cnt" data-n="72">0</span>%</em></div><div class="bar-track"><div class="bar-fill" data-w="72"></div></div></div>
+      <div class="bar-item"><div class="bar-top"><span><i class="fab fa-html5"></i> HTML / CSS</span><em><span class="cnt" data-n="80">0</span>%</em></div><div class="bar-track"><div class="bar-fill" data-w="80"></div></div></div>
+      <div class="bar-item"><div class="bar-top"><span><i class="fab fa-js"></i> JavaScript</span><em><span class="cnt" data-n="68">0</span>%</em></div><div class="bar-track"><div class="bar-fill" data-w="68"></div></div></div>
+      <div class="bar-item"><div class="bar-top"><span><i class="fas fa-file-word"></i> Microsoft Word</span><em><span class="cnt" data-n="80">0</span>%</em></div><div class="bar-track"><div class="bar-fill" data-w="80"></div></div></div>
+      <div class="bar-item"><div class="bar-top"><span><i class="fas fa-file-excel"></i> Microsoft Excel</span><em><span class="cnt" data-n="75">0</span>%</em></div><div class="bar-track"><div class="bar-fill" data-w="75"></div></div></div>
+      <div class="bar-item"><div class="bar-top"><span><i class="fas fa-file-powerpoint"></i> PowerPoint</span><em><span class="cnt" data-n="78">0</span>%</em></div><div class="bar-track"><div class="bar-fill" data-w="78"></div></div></div>
+      <div class="bar-item"><div class="bar-top"><span><i class="fas fa-keyboard"></i> Typing (30 WPM)</span><em><span class="cnt" data-n="75">0</span>%</em></div><div class="bar-track"><div class="bar-fill" data-w="75"></div></div></div>
+      <div class="bar-item"><div class="bar-top"><span><i class="fas fa-brain"></i> Problem Solving</span><em><span class="cnt" data-n="76">0</span>%</em></div><div class="bar-track"><div class="bar-fill" data-w="76"></div></div></div>
+      <div class="bar-item"><div class="bar-top"><span><i class="fas fa-comments"></i> Communication</span><em><span class="cnt" data-n="72">0</span>%</em></div><div class="bar-track"><div class="bar-fill" data-w="72"></div></div></div>
+      <div class="bar-item"><div class="bar-top"><span><i class="fas fa-users"></i> Teamwork</span><em><span class="cnt" data-n="78">0</span>%</em></div><div class="bar-track"><div class="bar-fill" data-w="78"></div></div></div>
+      <div class="bar-item"><div class="bar-top"><span><i class="fas fa-clock"></i> Time Management</span><em><span class="cnt" data-n="74">0</span>%</em></div><div class="bar-track"><div class="bar-fill" data-w="74"></div></div></div>
     </div>
 
     <div class="langs reveal">
-      <div class="lang"><div class="lang-name">বাংলা</div><div class="lang-lvl">100%</div></div>
-      <div class="lang"><div class="lang-name">English</div><div class="lang-lvl">70%</div></div>
-      <div class="lang"><div class="lang-name">हिन्दी Hindi</div><div class="lang-lvl">70%</div></div>
+      <div class="lang"><div class="lang-name">বাংলা</div><div class="lang-lvl">80%</div></div>
+      <div class="lang"><div class="lang-name">English</div><div class="lang-lvl">65%</div></div>
+      <div class="lang"><div class="lang-name">हिन्दी Hindi</div><div class="lang-lvl">60%</div></div>
     </div>
   </div>
 </section>
 
-<!-- HOBBIES -->
 <section id="hobbies" class="hobbies">
   <div class="about-deco">04</div>
   <div class="container">
     <div class="hobby-head reveal">
-      <span class="mini">Chapter Four</span>
       <h2 class="hobby-title">Beyond Work</h2>
       <p class="hobby-sub">Tap on each card to know more...</p>
     </div>
@@ -241,12 +240,10 @@
   </div>
 </section>
 
-<!-- CONTACT -->
 <section id="contact" class="contact">
   <div class="about-deco">05</div>
   <div class="container">
     <div class="contact-head reveal">
-      <span class="mini">Chapter Five</span>
       <h2 class="inter">Let's Connect</h2>
       <p class="contact-lead">Reach me through any platform — I reply faster than my Wi-Fi. 😄✨</p>
     </div>
@@ -263,12 +260,11 @@
 
 <footer>
   <div class="f-logo">SRS<em>.</em></div>
-  <p>© 2026 <b>SAIDUR R. SAIMOON</b> · Made/p>
+  <p>© 2026 <b>SAIDUR R. SAIMOON</b> · Made <span class="hh">♥</span></p>
 </footer>
 
 <button id="up"><i class="fas fa-arrow-up"></i></button>
 
-<!-- INFO MODAL -->
 <div class="info-modal" id="infoModal">
   <div class="info-box">
     <button class="info-close" id="infoClose"><i class="fas fa-times"></i></button>
@@ -278,7 +274,6 @@
   </div>
 </div>
 
-<!-- PASSWORD MODAL -->
 <div class="pwd-modal" id="pwdModal">
   <div class="pwd-box">
     <div class="pwd-icon"><i class="fas fa-lock"></i></div>
@@ -295,4 +290,4 @@
 
 <script src="script.js"></script>
 </body>
-  </html>
+        </html>
