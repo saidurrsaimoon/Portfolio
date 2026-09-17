@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
 <title>SAIDUR R. SAIMOON</title>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Playfair+Display:ital,wght@0,700;1,700&family=Cormorant+Garamond:wght@500;600;700&family=Space+Grotesk:wght@500;600;700&family=Outfit:wght@500;600;700&family=Caveat:wght@600;700&family=Inter:wght@400;500;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Cormorant+Garamond:wght@500;600;700&family=Space+Grotesk:wght@500;600;700&family=Outfit:wght@500;600;700&family=Caveat:wght@600;700&family=Inter:wght@400;500;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <link rel="stylesheet" href="style.css">
 </head>
@@ -17,12 +17,12 @@
 
 <div class="bg-layer bg-1"></div>
 <div class="bg-layer bg-2"></div>
+<div class="sparkles" id="sparkles"></div>
 
 <div id="bar"></div>
 
 <nav id="nav">
   <a href="#home" class="brand">
-    <span class="brand-mark">S</span>
     <span class="brand-txt">aimoon<em>.</em></span>
   </a>
   <ul class="menu" id="menu">
@@ -55,15 +55,13 @@
       <span class="bracket">]</span>
     </div>
     <p class="hero-text">
-      Soil Science student at <b>Barishal Govt College</b> crafting beautiful digital experiences through code &amp; creativity.
+      Soil Science student at <b>Government Barishal College</b> crafting beautiful digital experiences through code &amp; creativity.
     </p>
     <div class="hero-btns">
       <button class="btn btn-1" onclick="party(event)"><i class="fas fa-paper-plane"></i> Say Hi!</button>
     </div>
   </div>
 </section>
-
-<div class="runaway" id="runaway">Catch me! 🏃‍♂️</div>
 
 <div class="ticker">
   <div class="ticker-track">
@@ -74,6 +72,7 @@
   </div>
 </div>
 
+<!-- ABOUT -->
 <section id="about" class="about">
   <div class="about-deco">01</div>
   <div class="container">
@@ -98,7 +97,7 @@
         <p>Beyond academics, I'm deeply passionate about <b>web design, programming and problem solving</b>. What started as simple curiosity has grown into a genuine love for building things on the web — turning ideas into clean, functional, and beautiful digital experiences.</p>
         <p>I believe in <b>continuous learning</b>. Whether it's mastering a new CSS trick, exploring JavaScript concepts, or understanding how design influences user behavior — I'm always eager to grow. I enjoy working with teams, sharing ideas, and helping others along the way.</p>
         <div class="about-facts">
-          <div class="fact"><i class="fas fa-university"></i><div><small>College</small><b>Barishal Govt College</b></div></div>
+          <div class="fact"><i class="fas fa-university"></i><div><small>College</small><b>Government Barishal College</b></div></div>
           <div class="fact"><i class="fas fa-flask"></i><div><small>Department</small><b>Soil Science</b></div></div>
           <div class="fact"><i class="fas fa-map-marker-alt"></i><div><small>Location</small><b>Notullabad, Barishal</b></div></div>
           <div class="fact"><i class="fas fa-droplet"></i><div><small>Blood Group</small><b>B+</b></div></div>
@@ -115,6 +114,7 @@
   </div>
 </section>
 
+<!-- EDUCATION -->
 <section id="education" class="education">
   <div class="about-deco">02</div>
   <div class="container">
@@ -128,7 +128,7 @@
         <div class="time-content">
           <span class="time-date">2025 — 2026</span>
           <h4 class="cormorant">B.Sc. Honours (1st Year) — Soil Science</h4>
-          <p>Barishal Government College · Currently pursuing my Bachelor's degree with curiosity for both science and technology.</p>
+          <p>Government Barishal College · Currently pursuing my Bachelor's degree with curiosity for both science and technology.</p>
         </div>
       </div>
       <div class="time-item reveal">
@@ -136,7 +136,7 @@
         <div class="time-content">
           <span class="time-date">2025</span>
           <h4 class="cormorant">HSC — Science</h4>
-          <p>Charfesson Government College · GPA 4.08</p>
+          <p>Charfesson Government College · GPA 3.08</p>
         </div>
       </div>
       <div class="time-item reveal">
@@ -151,6 +151,7 @@
   </div>
 </section>
 
+<!-- SKILLS -->
 <section id="skills" class="skills">
   <div class="about-deco">03</div>
   <div class="container">
@@ -206,43 +207,41 @@
   </div>
 </section>
 
+<!-- HOBBIES -->
 <section id="hobbies" class="hobbies">
   <div class="about-deco">04</div>
   <div class="container">
     <div class="hobby-head reveal">
       <span class="mini">Chapter Four</span>
-      <h2 class="hand">Beyond Work</h2>
-      <p class="hand-sub">Tap on each card to know more...</p>
+      <h2 class="hobby-title">Beyond Work</h2>
+      <p class="hobby-sub">Tap on each card to know more...</p>
     </div>
     <div class="hobby-grid">
-      <div class="hobby reveal clickable" data-hobby="swim">
+      <div class="hobby reveal" data-hobby="swim" data-anim="bounce">
         <div class="h-icon">🏊‍♂️</div>
-        <h4 class="hand">Swimming</h4>
-        <p class="hand-note">Refreshing &amp; relaxing — my way to reset.</p>
-        <div class="tape"></div>
+        <h4>Swimming</h4>
+        <p>Refreshing &amp; relaxing — my way to reset.</p>
       </div>
-      <div class="hobby reveal clickable" data-hobby="coding">
+      <div class="hobby reveal" data-hobby="coding" data-anim="spin">
         <div class="h-icon">💻</div>
-        <h4 class="hand">Coding</h4>
-        <p class="hand-note">Turning ideas into reality, line by line.</p>
-        <div class="tape"></div>
+        <h4>Coding</h4>
+        <p>Turning ideas into reality, line by line.</p>
       </div>
-      <div class="hobby reveal clickable" data-hobby="games">
+      <div class="hobby reveal" data-hobby="games" data-anim="shake">
         <div class="h-icon">🎮</div>
-        <h4 class="hand">Video Games</h4>
-        <p class="hand-note">Strategy games that keep me sharp.</p>
-        <div class="tape"></div>
+        <h4>Video Games</h4>
+        <p>Strategy games that keep me sharp.</p>
       </div>
-      <div class="hobby reveal clickable" data-hobby="drive">
+      <div class="hobby reveal" data-hobby="drive" data-anim="drive">
         <div class="h-icon">🚗</div>
-        <h4 class="hand">Long Drive</h4>
-        <p class="hand-note">Peace on the road, nothing beats it.</p>
-        <div class="tape"></div>
+        <h4>Long Drive</h4>
+        <p>Peace on the road, nothing beats it.</p>
       </div>
     </div>
   </div>
 </section>
 
+<!-- CONTACT -->
 <section id="contact" class="contact">
   <div class="about-deco">05</div>
   <div class="container">
@@ -264,11 +263,12 @@
 
 <footer>
   <div class="f-logo">SRS<em>.</em></div>
-  <p>© 2026 <b>SAIDUR R. SAIMOON</b><p> 
+  <p>© 2026 <b>SAIDUR R. SAIMOON</b> · Made/p>
 </footer>
 
 <button id="up"><i class="fas fa-arrow-up"></i></button>
 
+<!-- INFO MODAL -->
 <div class="info-modal" id="infoModal">
   <div class="info-box">
     <button class="info-close" id="infoClose"><i class="fas fa-times"></i></button>
@@ -278,6 +278,7 @@
   </div>
 </div>
 
+<!-- PASSWORD MODAL -->
 <div class="pwd-modal" id="pwdModal">
   <div class="pwd-box">
     <div class="pwd-icon"><i class="fas fa-lock"></i></div>
