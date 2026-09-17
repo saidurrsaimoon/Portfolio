@@ -655,3 +655,170 @@ footer {
   .contact-links a { flex-direction: column; gap: 3px; }
   footer { flex-direction: column; }
 }
+/* ============ PROFILE PHOTO (Hero Card) ============ */
+.profile-photo {
+  width: 210px;
+  height: 210px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid var(--accent);
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 0 0 8px rgba(199, 243, 107, .12);
+  animation: float 4s ease-in-out infinite;
+}
+
+.profile-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ============ CV SECTION ============ */
+.cv-section {
+  border-top: 1px solid var(--line);
+}
+
+/* Lock Screen */
+.cv-lock {
+  background: var(--paper);
+  border: 1px dashed var(--line);
+  padding: 55px 35px;
+  text-align: center;
+  max-width: 520px;
+  margin: 0 auto;
+  border-radius: 6px;
+  transition: .35s ease;
+}
+
+.lock-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  display: inline-block;
+  animation: float 3s ease-in-out infinite;
+}
+
+.cv-lock h3 {
+  font-size: 1.5rem;
+  letter-spacing: -.03em;
+  margin-bottom: 8px;
+}
+
+.lock-sub {
+  color: var(--muted);
+  font-size: .9rem;
+  margin-bottom: 25px;
+}
+
+#cvForm {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#cvPassword {
+  flex: 1;
+  min-width: 200px;
+  padding: 14px 18px;
+  border: 1px solid var(--line);
+  background: var(--bg);
+  font-family: inherit;
+  font-size: .9rem;
+  color: var(--ink);
+  outline: none;
+  transition: .25s;
+}
+
+#cvPassword:focus {
+  border-color: var(--ink);
+  background: white;
+}
+
+#cvForm button {
+  cursor: pointer;
+}
+
+.cv-error {
+  color: #c0392b;
+  font-size: .82rem;
+  margin-top: 14px;
+  min-height: 18px;
+  font-weight: 600;
+}
+
+/* Unlocked Content */
+.cv-content {
+  display: none;
+  animation: fadeInUp .5s ease;
+}
+
+.cv-content.active {
+  display: block;
+}
+
+.cv-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.cv-actions .btn {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.lock-btn {
+  background: transparent;
+  border: 1px solid var(--ink);
+  padding: 14px 22px;
+  font-size: .82rem;
+  font-weight: 700;
+  transition: .25s;
+}
+
+.lock-btn:hover {
+  background: var(--ink);
+  color: white;
+}
+
+.cv-frame-wrap {
+  border: 1px solid var(--line);
+  background: var(--paper);
+  overflow: hidden;
+  box-shadow: 12px 12px 0 var(--accent);
+}
+
+.cv-frame {
+  width: 100%;
+  height: 800px;
+  border: 0;
+  display: block;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 560px) {
+  .cv-frame {
+    height: 500px;
+  }
+  .cv-actions {
+    flex-direction: column;
+  }
+  .cv-actions .btn,
+  .cv-actions .lock-btn {
+    width: 100%;
+    text-align: center;
+  }
+  }
