@@ -615,46 +615,6 @@ footer {
   to { transform: rotate(360deg); }
 }
 
-@media (max-width: 850px) {
-  .navbar { padding: 0 6%; }
-  .menu-btn { display: block; }
-  nav {
-    position: absolute;
-    top: 78px;
-    left: 0;
-    right: 0;
-    display: none;
-    flex-direction: column;
-    gap: 0;
-    background: var(--paper);
-    border-bottom: 1px solid var(--line);
-  }
-  nav.open { display: flex; }
-  nav a { padding: 16px 6%; border-top: 1px solid var(--line); }
-  .hero {
-    grid-template-columns: 1fr;
-    gap: 55px;
-    padding-top: 65px;
-  }
-  .hero-card { min-height: 420px; }
-  .about-grid, .skills-grid { grid-template-columns: 1fr; gap: 35px; }
-  .personal-grid { grid-template-columns: 1fr 1fr; }
-}
-
-@media (max-width: 560px) {
-  .section { padding: 80px 0; width: 88%; }
-  h1 { font-size: 3.1rem; }
-  .hero-card { min-height: 360px; }
-  .profile-mark { width: 160px; height: 160px; font-size: 6rem; }
-  .orbit { width: 230px; height: 230px; }
-  .stats { grid-template-columns: 1fr; }
-  .education-card { grid-template-columns: 1fr; gap: 8px; }
-  .personal-grid { grid-template-columns: 1fr; }
-  .language-box { grid-template-columns: 1fr; }
-  .language-box div + div { border-left: 0; border-top: 1px solid var(--line); }
-  .contact-links a { flex-direction: column; gap: 3px; }
-  footer { flex-direction: column; }
-}
 /* ============ PROFILE PHOTO (Hero Card) ============ */
 .profile-photo {
   width: 210px;
@@ -809,16 +769,49 @@ footer {
   }
 }
 
-@media (max-width: 560px) {
-  .cv-frame {
-    height: 500px;
-  }
-  .cv-actions {
+/* ============ RESPONSIVE ============ */
+@media (max-width: 850px) {
+  .navbar { padding: 0 6%; }
+  .menu-btn { display: block; }
+  nav {
+    position: absolute;
+    top: 78px;
+    left: 0;
+    right: 0;
+    display: none;
     flex-direction: column;
+    gap: 0;
+    background: var(--paper);
+    border-bottom: 1px solid var(--line);
   }
+  nav.open { display: flex; }
+  nav a { padding: 16px 6%; border-top: 1px solid var(--line); }
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 55px;
+    padding-top: 65px;
+  }
+  .hero-card { min-height: 420px; }
+  .about-grid, .skills-grid { grid-template-columns: 1fr; gap: 35px; }
+  .personal-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 560px) {
+  .section { padding: 80px 0; width: 88%; }
+  h1 { font-size: 3.1rem; }
+  .hero-card { min-height: 360px; }
+  .profile-mark { width: 160px; height: 160px; font-size: 6rem; }
+  .profile-photo { width: 160px; height: 160px; }
+  .orbit { width: 230px; height: 230px; }
+  .stats { grid-template-columns: 1fr; }
+  .education-card { grid-template-columns: 1fr; gap: 8px; }
+  .personal-grid { grid-template-columns: 1fr; }
+  .language-box { grid-template-columns: 1fr; }
+  .language-box div + div { border-left: 0; border-top: 1px solid var(--line); }
+  .contact-links a { flex-direction: column; gap: 3px; }
+  footer { flex-direction: column; }
+  .cv-frame { height: 500px; }
+  .cv-actions { flex-direction: column; }
   .cv-actions .btn,
-  .cv-actions .lock-btn {
-    width: 100%;
-    text-align: center;
-  }
+  .cv-actions .lock-btn { width: 100%; text-align: center; }
   }
